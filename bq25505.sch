@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bq25505-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -17,12 +16,12 @@ $EndDescr
 $Comp
 L BatteryManagement:BQ25505 U?
 U 1 1 5DF21698
-P 4500 3100
-F 0 "U?" H 4475 3775 50  0000 C CNN
-F 1 "BQ25505" H 4475 3684 50  0000 C CNN
-F 2 "Battery_Management:Texas_RGR_S-PVQFN-N20_EP2.05x2.05mm_ThermalVias" H 4300 3400 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/bq25570.pdf" H 4300 3400 50  0001 C CNN
-	1    4500 3100
+P 4450 6350
+F 0 "U?" H 4425 7025 50  0000 C CNN
+F 1 "BQ25505" H 4425 6934 50  0000 C CNN
+F 2 "Battery_Management:Texas_RGR_S-PVQFN-N20_EP2.05x2.05mm_ThermalVias" H 4250 6650 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/bq25570.pdf" H 4250 6650 50  0001 C CNN
+	1    4450 6350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -101,24 +100,24 @@ Wire Wire Line
 	5750 4250 6200 4250
 Text Label 5850 4250 0    50   ~ 0
 VRDIV
-Text Label 5050 3650 0    50   ~ 0
+Text Label 5000 6900 0    50   ~ 0
 GND
-Text Label 5050 2950 0    50   ~ 0
+Text Label 5000 6200 0    50   ~ 0
 GND
-Text Label 5050 3050 0    50   ~ 0
+Text Label 5000 6300 0    50   ~ 0
 GND
-Text Label 3900 2650 2    50   ~ 0
+Text Label 3850 5900 2    50   ~ 0
 GND
-NoConn ~ 5050 3250
-NoConn ~ 5050 3150
-NoConn ~ 3900 3150
-Text Label 3900 3350 2    50   ~ 0
+NoConn ~ 5000 6500
+NoConn ~ 5000 6400
+NoConn ~ 3850 6400
+Text Label 3850 6600 2    50   ~ 0
 VRDIV
-Text Label 5050 2650 0    50   ~ 0
+Text Label 5000 5900 0    50   ~ 0
 OK_HYST
-Text Label 5050 2750 0    50   ~ 0
+Text Label 5000 6000 0    50   ~ 0
 OK_PROG
-Text Label 5050 3350 0    50   ~ 0
+Text Label 5000 6600 0    50   ~ 0
 VBAT_SEC
 $Comp
 L Device:Battery_Cell BT?
@@ -137,164 +136,164 @@ Text Label 5900 5150 0    50   ~ 0
 GND
 Text Label 6650 3500 0    50   ~ 0
 GND
-Text Label 5050 3450 0    50   ~ 0
+Text Label 5000 6700 0    50   ~ 0
 VSTOR
-Text Label 3900 2850 2    50   ~ 0
+Text Label 3850 6100 2    50   ~ 0
 GND
 $Comp
 L Device:C C?
 U 1 1 5DF32CAE
-P 2150 4300
-F 0 "C?" H 2265 4346 50  0000 L CNN
-F 1 "4.7μF" H 2265 4255 50  0000 L CNN
-F 2 "" H 2188 4150 50  0001 C CNN
-F 3 "~" H 2150 4300 50  0001 C CNN
-	1    2150 4300
+P 2500 6650
+F 0 "C?" H 2615 6696 50  0000 L CNN
+F 1 "4.7μF" H 2615 6605 50  0000 L CNN
+F 2 "" H 2538 6500 50  0001 C CNN
+F 3 "~" H 2500 6650 50  0001 C CNN
+	1    2500 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5DF32F7D
-P 2600 4300
-F 0 "C?" H 2715 4346 50  0000 L CNN
-F 1 "0.01μF" H 2715 4255 50  0000 L CNN
-F 2 "" H 2638 4150 50  0001 C CNN
-F 3 "~" H 2600 4300 50  0001 C CNN
-	1    2600 4300
+P 2950 6650
+F 0 "C?" H 3065 6696 50  0000 L CNN
+F 1 "0.01μF" H 3065 6605 50  0000 L CNN
+F 2 "" H 2988 6500 50  0001 C CNN
+F 3 "~" H 2950 6650 50  0001 C CNN
+	1    2950 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4450 2150 4450
-Text Label 2300 4450 0    50   ~ 0
+	2950 6800 2500 6800
+Text Label 2650 6800 0    50   ~ 0
 GND
 Wire Wire Line
-	2150 4150 2600 4150
-Text Label 2250 4150 0    50   ~ 0
+	2500 6500 2950 6500
+Text Label 2600 6500 0    50   ~ 0
 VSTOR
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5DF3515B
-P 1600 2850
-F 0 "J?" H 1708 3031 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1708 2940 50  0000 C CNN
-F 2 "" H 1600 2850 50  0001 C CNN
-F 3 "~" H 1600 2850 50  0001 C CNN
-	1    1600 2850
+P 900 1950
+F 0 "J?" H 1008 2131 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1008 2040 50  0000 C CNN
+F 2 "" H 900 1950 50  0001 C CNN
+F 3 "~" H 900 1950 50  0001 C CNN
+	1    900  1950
 	1    0    0    -1  
 $EndComp
-Text Label 1800 2950 0    50   ~ 0
+Text Label 1100 2050 0    50   ~ 0
 GND
-Text Label 3900 2750 2    50   ~ 0
+Text Label 3850 6000 2    50   ~ 0
 VIN_DC
-Text Label 1800 2850 0    50   ~ 0
+Text Label 1100 1950 0    50   ~ 0
 VIN_DC
 $Comp
 L Device:L L?
 U 1 1 5DF35E27
-P 2850 2300
-F 0 "L?" V 3040 2300 50  0000 C CNN
-F 1 "22μH" V 2949 2300 50  0000 C CNN
-F 2 "" H 2850 2300 50  0001 C CNN
-F 3 "~" H 2850 2300 50  0001 C CNN
-	1    2850 2300
+P 3200 4650
+F 0 "L?" V 3390 4650 50  0000 C CNN
+F 1 "22μH" V 3299 4650 50  0000 C CNN
+F 2 "" H 3200 4650 50  0001 C CNN
+F 3 "~" H 3200 4650 50  0001 C CNN
+	1    3200 4650
 	0    -1   -1   0   
 $EndComp
-Text Label 2700 2300 2    50   ~ 0
+Text Label 3050 4650 2    50   ~ 0
 VIN_DC
-Text Label 3000 2300 0    50   ~ 0
+Text Label 3350 4650 0    50   ~ 0
 LBOOST
-Text Label 5050 3550 0    50   ~ 0
+Text Label 5000 6800 0    50   ~ 0
 LBOOST
-Text Label 3900 2950 2    50   ~ 0
+Text Label 3850 6200 2    50   ~ 0
 VREF_SAMP
 $Comp
 L Device:C C?
 U 1 1 5DF3693D
-P 2600 2800
-F 0 "C?" H 2715 2846 50  0000 L CNN
-F 1 "4.7μF" H 2715 2755 50  0000 L CNN
-F 2 "" H 2638 2650 50  0001 C CNN
-F 3 "~" H 2600 2800 50  0001 C CNN
-	1    2600 2800
+P 2950 5150
+F 0 "C?" H 3065 5196 50  0000 L CNN
+F 1 "4.7μF" H 3065 5105 50  0000 L CNN
+F 2 "" H 2988 5000 50  0001 C CNN
+F 3 "~" H 2950 5150 50  0001 C CNN
+	1    2950 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5DF36CED
-P 3050 2800
-F 0 "C?" H 3165 2846 50  0000 L CNN
-F 1 "10nF" H 3165 2755 50  0000 L CNN
-F 2 "" H 3088 2650 50  0001 C CNN
-F 3 "~" H 3050 2800 50  0001 C CNN
-	1    3050 2800
+P 3400 5150
+F 0 "C?" H 3515 5196 50  0000 L CNN
+F 1 "10nF" H 3515 5105 50  0000 L CNN
+F 2 "" H 3438 5000 50  0001 C CNN
+F 3 "~" H 3400 5150 50  0001 C CNN
+	1    3400 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 2950 3050 2950
-Text Label 2750 2950 0    50   ~ 0
+	2950 5300 3400 5300
+Text Label 3100 5300 0    50   ~ 0
 GND
-Text Label 3050 2650 0    50   ~ 0
+Text Label 3400 5000 0    50   ~ 0
 VREF_SAMP
-Text Label 2600 2650 0    50   ~ 0
+Text Label 2950 5000 0    50   ~ 0
 VIN_DC
 $Comp
 L Device:LED D?
 U 1 1 5DF37C42
-P 9050 1250
-F 0 "D?" H 9043 995 50  0000 C CNN
-F 1 "LED" H 9043 1086 50  0000 C CNN
-F 2 "" H 9050 1250 50  0001 C CNN
-F 3 "~" H 9050 1250 50  0001 C CNN
-	1    9050 1250
+P 9450 1300
+F 0 "D?" H 9443 1045 50  0000 C CNN
+F 1 "LED" H 9443 1136 50  0000 C CNN
+F 2 "" H 9450 1300 50  0001 C CNN
+F 3 "~" H 9450 1300 50  0001 C CNN
+	1    9450 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5DF38A39
-P 9050 1650
-F 0 "D?" H 9043 1395 50  0000 C CNN
-F 1 "LED" H 9043 1486 50  0000 C CNN
-F 2 "" H 9050 1650 50  0001 C CNN
-F 3 "~" H 9050 1650 50  0001 C CNN
-	1    9050 1650
+P 9450 1700
+F 0 "D?" H 9443 1445 50  0000 C CNN
+F 1 "LED" H 9443 1536 50  0000 C CNN
+F 2 "" H 9450 1700 50  0001 C CNN
+F 3 "~" H 9450 1700 50  0001 C CNN
+	1    9450 1700
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5DF392A0
-P 8750 1250
-F 0 "R?" V 8543 1250 50  0000 C CNN
-F 1 "R" V 8634 1250 50  0000 C CNN
-F 2 "" V 8680 1250 50  0001 C CNN
-F 3 "~" H 8750 1250 50  0001 C CNN
-	1    8750 1250
+P 9150 1300
+F 0 "R?" V 8943 1300 50  0000 C CNN
+F 1 "R" V 9034 1300 50  0000 C CNN
+F 2 "" V 9080 1300 50  0001 C CNN
+F 3 "~" H 9150 1300 50  0001 C CNN
+	1    9150 1300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5DF39CEF
-P 8750 1650
-F 0 "R?" V 8543 1650 50  0000 C CNN
-F 1 "R" V 8634 1650 50  0000 C CNN
-F 2 "" V 8680 1650 50  0001 C CNN
-F 3 "~" H 8750 1650 50  0001 C CNN
-	1    8750 1650
+P 9150 1700
+F 0 "R?" V 8943 1700 50  0000 C CNN
+F 1 "R" V 9034 1700 50  0000 C CNN
+F 2 "" V 9080 1700 50  0001 C CNN
+F 3 "~" H 9150 1700 50  0001 C CNN
+	1    9150 1700
 	0    1    1    0   
 $EndComp
-Text Label 8600 1250 2    50   ~ 0
+Text Label 9000 1300 2    50   ~ 0
 VBAT_OK
-Text Label 9200 1250 0    50   ~ 0
+Text Label 9600 1300 0    50   ~ 0
 GND
-Text Label 9200 1650 0    50   ~ 0
+Text Label 9600 1700 0    50   ~ 0
 GND
-Text Label 5050 2850 0    50   ~ 0
+Text Label 5000 6100 0    50   ~ 0
 VBAT_OK
-NoConn ~ 3900 3550
-Text Label 3900 3450 2    50   ~ 0
+NoConn ~ 3850 6800
+Text Label 3850 6700 2    50   ~ 0
 VB_SEC_ON
-Text Label 3900 3250 2    50   ~ 0
+Text Label 3850 6500 2    50   ~ 0
 VBAT_OV
-Text Label 8600 1650 2    50   ~ 0
+Text Label 9000 1700 2    50   ~ 0
 VB_SEC_ON
 $Comp
 L Connector:Conn_01x01_Male J?
@@ -359,30 +358,30 @@ VSTOR
 $Comp
 L Device:LED D?
 U 1 1 5DF4281F
-P 9050 2050
-F 0 "D?" H 9043 1795 50  0000 C CNN
-F 1 "LED" H 9043 1886 50  0000 C CNN
-F 2 "" H 9050 2050 50  0001 C CNN
-F 3 "~" H 9050 2050 50  0001 C CNN
-	1    9050 2050
+P 9450 2100
+F 0 "D?" H 9443 1845 50  0000 C CNN
+F 1 "LED" H 9443 1936 50  0000 C CNN
+F 2 "" H 9450 2100 50  0001 C CNN
+F 3 "~" H 9450 2100 50  0001 C CNN
+	1    9450 2100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5DF42825
-P 8750 2050
-F 0 "R?" V 8543 2050 50  0000 C CNN
-F 1 "R" V 8634 2050 50  0000 C CNN
-F 2 "" V 8680 2050 50  0001 C CNN
-F 3 "~" H 8750 2050 50  0001 C CNN
-	1    8750 2050
+P 9150 2100
+F 0 "R?" V 8943 2100 50  0000 C CNN
+F 1 "R" V 9034 2100 50  0000 C CNN
+F 2 "" V 9080 2100 50  0001 C CNN
+F 3 "~" H 9150 2100 50  0001 C CNN
+	1    9150 2100
 	0    1    1    0   
 $EndComp
-Text Label 9200 2050 0    50   ~ 0
+Text Label 9600 2100 0    50   ~ 0
 GND
-Text Label 8600 2050 2    50   ~ 0
+Text Label 9000 2100 2    50   ~ 0
 VSTORE
-Text Notes 8650 800  0    50   ~ 0
+Text Notes 9050 850  0    50   ~ 0
 STATUS LED
 Text Label 10650 1900 0    50   ~ 0
 VBAT_OK
@@ -425,4 +424,69 @@ Text Label 10650 2650 0    50   ~ 0
 OK_PROG
 Text Label 10650 2150 0    50   ~ 0
 VBAT_OV
+$Comp
+L power:GND #PWR?
+U 1 1 5DF29C3E
+P 1250 1150
+F 0 "#PWR?" H 1250 900 50  0001 C CNN
+F 1 "GND" H 1255 977 50  0000 C CNN
+F 2 "" H 1250 1150 50  0001 C CNN
+F 3 "" H 1250 1150 50  0001 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+Text Label 1250 1150 0    50   ~ 0
+GND
+Text Label 3850 6300 2    50   ~ 0
+EN
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5DF2A65D
+P 900 2700
+F 0 "J?" H 1008 2981 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 1008 2890 50  0000 C CNN
+F 2 "" H 900 2700 50  0001 C CNN
+F 3 "~" H 900 2700 50  0001 C CNN
+	1    900  2700
+	1    0    0    -1  
+$EndComp
+Text Label 1100 2700 0    50   ~ 0
+EN
+Text Label 1100 2800 0    50   ~ 0
+GND
+Text Label 1100 2600 0    50   ~ 0
+VSTOR
+$Comp
+L power:VDD #PWR?
+U 1 1 5DF2BD45
+P 800 1300
+F 0 "#PWR?" H 800 1150 50  0001 C CNN
+F 1 "VDD" H 817 1473 50  0000 C CNN
+F 2 "" H 800 1300 50  0001 C CNN
+F 3 "" H 800 1300 50  0001 C CNN
+	1    800  1300
+	1    0    0    -1  
+$EndComp
+Text Label 800  1300 0    50   ~ 0
+VIN_DC
+Text Notes 750  850  0    50   ~ 0
+POWER
+Wire Notes Line
+	8550 2800 8550 500 
+Wire Notes Line
+	8550 2800 11200 2800
+Wire Notes Line
+	10000 500  10000 2800
+Wire Notes Line
+	1550 1450 500  1450
+Text Notes 550  1600 0    50   ~ 0
+RAW POWER CONNECTION
+Wire Notes Line
+	1550 2150 500  2150
+Text Notes 700  2300 0    50   ~ 0
+ENABLE SELECTOR
+Wire Notes Line
+	1550 2900 500  2900
+Wire Notes Line
+	1550 500  1550 2900
 $EndSCHEMATC
