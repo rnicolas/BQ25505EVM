@@ -330,7 +330,7 @@ GND
 Text Notes 10350 850  0    50   ~ 0
 TEST POINTS
 Text Notes 7350 7500 0    50   ~ 0
-BQ25505EVM
+BQ25570EVM
 Text Notes 8100 7650 0    50   ~ 0
 2019/12/12
 Text Notes 10600 7650 0    50   ~ 0
