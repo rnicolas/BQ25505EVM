@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bq25505-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,213 +13,21 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L BatteryManagement:BQ25505 U?
-U 1 1 5DF21698
-P 4450 6350
-F 0 "U?" H 4425 7025 50  0000 C CNN
-F 1 "BQ25505" H 4425 6934 50  0000 C CNN
-F 2 "Battery_Management:Texas_RGR_S-PVQFN-N20_EP2.05x2.05mm_ThermalVias" H 4250 6650 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/bq25570.pdf" H 4250 6650 50  0001 C CNN
-	1    4450 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5DF2614D
-P 5750 4400
-F 0 "R?" H 5680 4354 50  0000 R CNN
-F 1 "8.25MΩ" H 5680 4445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 4400 50  0001 C CNN
-F 3 "~" H 5750 4400 50  0001 C CNN
-	1    5750 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5DF26B24
-P 5750 4700
-F 0 "R?" H 5820 4746 50  0000 L CNN
-F 1 "4.75MΩ" H 5820 4655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 4700 50  0001 C CNN
-F 3 "https://docs.rs-online.com/3b75/0900766b80d98b26.pdf" H 5750 4700 50  0001 C CNN
-	1    5750 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5DF2720D
-P 6200 4400
-F 0 "R?" H 6270 4446 50  0000 L CNN
-F 1 "0.698MΩ" H 6270 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4400 50  0001 C CNN
-F 3 "~" H 6200 4400 50  0001 C CNN
-	1    6200 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5DF2797B
-P 6200 4700
-F 0 "R?" H 6270 4746 50  0000 L CNN
-F 1 "8.06MΩ" H 6270 4655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4700 50  0001 C CNN
-F 3 "~" H 6200 4700 50  0001 C CNN
-	1    6200 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5DF27EA7
-P 6200 5000
-F 0 "R?" H 6270 5046 50  0000 L CNN
-F 1 "2.21MΩ" H 6270 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 5000 50  0001 C CNN
-F 3 "https://docs.rs-online.com/3b75/0900766b80d98b26.pdf" H 6200 5000 50  0001 C CNN
-	1    6200 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 4550 6600 4550
-Connection ~ 6200 4550
-Wire Wire Line
-	6200 4850 6600 4850
-Connection ~ 6200 4850
-Wire Wire Line
-	5750 4550 5350 4550
-Connection ~ 5750 4550
-Text Label 5350 4550 0    50   ~ 0
-VBAT_OV
-Text Label 6600 4850 2    50   ~ 0
-OK_PROG
-Text Label 6600 4550 2    50   ~ 0
-OK_HYST
-Wire Wire Line
-	5750 4250 6200 4250
-Text Label 5850 4250 0    50   ~ 0
-VRDIV
-Text Label 5000 6900 0    50   ~ 0
-GND
-Text Label 5000 6200 0    50   ~ 0
-GND
-Text Label 5000 6300 0    50   ~ 0
-GND
-Text Label 3850 5900 2    50   ~ 0
-GND
-NoConn ~ 5000 6500
-NoConn ~ 5000 6400
-NoConn ~ 3850 6400
-Text Label 3850 6600 2    50   ~ 0
-VRDIV
-Text Label 5000 5900 0    50   ~ 0
-OK_HYST
-Text Label 5000 6000 0    50   ~ 0
-OK_PROG
-Text Label 5000 6600 0    50   ~ 0
-VBAT_SEC
-$Comp
-L Device:Battery_Cell BT?
-U 1 1 5DF32352
-P 6650 3400
-F 0 "BT?" H 6768 3496 50  0000 L CNN
-F 1 "Battery_Cell" H 6768 3405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm" V 6650 3460 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2579997.pdf" V 6650 3460 50  0001 C CNN
-	1    6650 3400
-	1    0    0    -1  
-$EndComp
-Text Label 6650 3200 0    50   ~ 0
-VBAT_SEC
-Text Label 6650 3500 0    50   ~ 0
-GND
-Text Label 5000 6700 0    50   ~ 0
-VSTOR
-Text Label 3850 6100 2    50   ~ 0
-GND
-$Comp
-L Device:C C?
-U 1 1 5DF32CAE
-P 2500 6650
-F 0 "C?" H 2615 6696 50  0000 L CNN
-F 1 "4.7μF" H 2615 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2538 6500 50  0001 C CNN
-F 3 "~" H 2500 6650 50  0001 C CNN
-	1    2500 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5DF32F7D
-P 2950 6650
-F 0 "C?" H 3065 6696 50  0000 L CNN
-F 1 "0.01μF" H 3065 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 6500 50  0001 C CNN
-F 3 "~" H 2950 6650 50  0001 C CNN
-	1    2950 6650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 6800 2500 6800
-Text Label 2650 6800 0    50   ~ 0
-GND
-Wire Wire Line
-	2500 6500 2950 6500
-Text Label 2600 6500 0    50   ~ 0
-VSTOR
+NoConn ~ 5900 1500
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5DF3515B
-P 900 1950
-F 0 "J?" H 1008 2131 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1008 2040 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 900 1950 50  0001 C CNN
-F 3 "~" H 900 1950 50  0001 C CNN
-	1    900  1950
+P 900 950
+F 0 "J?" H 1008 1131 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1008 1040 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 900 950 50  0001 C CNN
+F 3 "~" H 900 950 50  0001 C CNN
+	1    900  950 
 	1    0    0    -1  
 $EndComp
-Text Label 1100 2050 0    50   ~ 0
+Text Label 1100 1050 0    50   ~ 0
 GND
-Text Label 3850 6000 2    50   ~ 0
-VIN_DC
-Text Label 1100 1950 0    50   ~ 0
-VIN_DC
-Text Label 3100 4300 2    50   ~ 0
-VIN_DC
-Text Label 3400 4300 0    50   ~ 0
-LBOOST
-Text Label 5000 6800 0    50   ~ 0
-LBOOST
-Text Label 3850 6200 2    50   ~ 0
-VREF_SAMP
-$Comp
-L Device:C C?
-U 1 1 5DF3693D
-P 2950 5150
-F 0 "C?" H 3065 5196 50  0000 L CNN
-F 1 "4.7μF" H 3065 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 5000 50  0001 C CNN
-F 3 "~" H 2950 5150 50  0001 C CNN
-	1    2950 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5DF36CED
-P 3400 5150
-F 0 "C?" H 3515 5196 50  0000 L CNN
-F 1 "10nF" H 3515 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 5000 50  0001 C CNN
-F 3 "~" H 3400 5150 50  0001 C CNN
-	1    3400 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 5350 3400 5350
-Text Label 3100 5350 0    50   ~ 0
-GND
-Text Label 3400 5000 0    50   ~ 0
-VREF_SAMP
-Text Label 2950 5000 0    50   ~ 0
+Text Label 1100 950  0    50   ~ 0
 VIN_DC
 $Comp
 L Device:LED D?
@@ -272,13 +79,6 @@ Text Label 9600 1300 0    50   ~ 0
 GND
 Text Label 9600 1700 0    50   ~ 0
 GND
-Text Label 5000 6100 0    50   ~ 0
-VBAT_OK
-NoConn ~ 3850 6800
-Text Label 3850 6700 2    50   ~ 0
-VB_SEC_ON
-Text Label 3850 6500 2    50   ~ 0
-VBAT_OV
 Text Label 9000 1700 2    50   ~ 0
 VB_SEC_ON
 $Comp
@@ -408,84 +208,14 @@ Text Label 10650 2650 0    50   ~ 0
 OK_PROG
 Text Label 10650 2150 0    50   ~ 0
 VBAT_OV
-$Comp
-L power:GND #PWR?
-U 1 1 5DF29C3E
-P 1250 1150
-F 0 "#PWR?" H 1250 900 50  0001 C CNN
-F 1 "GND" H 1255 977 50  0000 C CNN
-F 2 "" H 1250 1150 50  0001 C CNN
-F 3 "" H 1250 1150 50  0001 C CNN
-	1    1250 1150
-	1    0    0    -1  
-$EndComp
-Text Label 1250 1150 0    50   ~ 0
-GND
-$Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 5DF2A65D
-P 900 2700
-F 0 "J?" H 1008 2981 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 1008 2890 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 900 2700 50  0001 C CNN
-F 3 "~" H 900 2700 50  0001 C CNN
-	1    900  2700
-	1    0    0    -1  
-$EndComp
-Text Label 1100 2700 0    50   ~ 0
-EN
-Text Label 1100 2800 0    50   ~ 0
-GND
-Text Label 1100 2600 0    50   ~ 0
-VSTOR
-$Comp
-L power:VDD #PWR?
-U 1 1 5DF2BD45
-P 800 1300
-F 0 "#PWR?" H 800 1150 50  0001 C CNN
-F 1 "VDD" H 817 1473 50  0000 C CNN
-F 2 "" H 800 1300 50  0001 C CNN
-F 3 "" H 800 1300 50  0001 C CNN
-	1    800  1300
-	1    0    0    -1  
-$EndComp
-Text Label 800  1300 0    50   ~ 0
-VIN_DC
-Text Notes 750  850  0    50   ~ 0
-POWER
 Wire Notes Line
 	8550 3100 11200 3100
 Wire Notes Line
 	10000 500  10000 3100
 Wire Notes Line
-	1550 1450 500  1450
-Text Notes 550  1600 0    50   ~ 0
-RAW POWER CONNECTION
+	1550 1200 500  1200
 Wire Notes Line
-	1550 2150 500  2150
-Text Notes 700  2300 0    50   ~ 0
-ENABLE SELECTOR
-Wire Notes Line
-	1550 2900 500  2900
-Wire Notes Line
-	1550 500  1550 2900
-$Comp
-L Device:L_Core_Ferrite L?
-U 1 1 5DF36346
-P 3250 4300
-F 0 "L?" V 3475 4300 50  0000 C CNN
-F 1 "22μH" V 3384 4300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3250 4300 50  0001 C CNN
-F 3 "~" H 3250 4300 50  0001 C CNN
-	1    3250 4300
-	0    -1   -1   0   
-$EndComp
-Text Label 3850 6300 2    50   ~ 0
-EN
-Wire Wire Line
-	3400 5350 3400 5300
-Wire Wire Line
-	2950 5350 2950 5300
+	1550 1900 500  1900
 $Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5DF3F51C
@@ -502,20 +232,309 @@ VRDIV
 Wire Notes Line
 	8550 500  8550 3100
 $Comp
-L Device:R R?
-U 1 1 5DF4310E
-P 6200 5300
-F 0 "R?" H 6270 5346 50  0000 L CNN
-F 1 "2MΩ" H 6270 5255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 5300 50  0001 C CNN
-F 3 "https://docs.rs-online.com/3b75/0900766b80d98b26.pdf" H 6200 5300 50  0001 C CNN
-	1    6200 5300
+L BatteryManagement:BQ25570 U?
+U 1 1 5DF8A8E4
+P 5350 1350
+F 0 "U?" H 5325 2025 50  0000 C CNN
+F 1 "BQ25570" H 5325 1934 50  0000 C CNN
+F 2 "Battery_Management:Texas_RGR_S-PVQFN-N20_EP2.05x2.05mm_ThermalVias" H 5150 1650 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/bq25570.pdf" H 5150 1650 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 1700
+Text Notes 850  650  0    50   ~ 0
+RAW INPUT
+Text Notes 650  1350 0    50   ~ 0
+REGULATED OUTPUT
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5DF974C9
+P 900 1650
+F 0 "J?" H 1008 1831 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1008 1740 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 900 1650 50  0001 C CNN
+F 3 "~" H 900 1650 50  0001 C CNN
+	1    900  1650
+	1    0    0    -1  
+$EndComp
+Text Label 1100 1750 0    50   ~ 0
+GND
+Text Label 1100 1650 0    50   ~ 0
+VOUT
+Wire Notes Line
+	1550 1900 1550 500 
+Text Label 4750 900  2    50   ~ 0
+GND
+Text Label 4750 1100 2    50   ~ 0
+GND
+Text Label 4750 1000 2    50   ~ 0
+VIN_DC
+Text Label 4750 1200 2    50   ~ 0
+VREF_SAMP
+Text Label 4750 1300 2    50   ~ 0
+EN
+Text Label 4750 1400 2    50   ~ 0
+VOUT_EN
+Text Label 4750 1500 2    50   ~ 0
+VBAT_OV
+Text Label 4750 1600 2    50   ~ 0
+VRDIV
+Text Label 4750 1800 2    50   ~ 0
+OK_HYST
+Text Label 5900 1900 0    50   ~ 0
+GND
+Text Label 5900 1300 0    50   ~ 0
+GND
+Text Label 5900 900  0    50   ~ 0
+OK_PROG
+Text Label 5900 1000 0    50   ~ 0
+VOUT_SET
+Text Label 5900 1100 0    50   ~ 0
+VBAT_OK
+Text Label 5900 1200 0    50   ~ 0
+VOUT
+Text Label 5900 1400 0    50   ~ 0
+LBUCK
+Text Label 5900 1600 0    50   ~ 0
+VBAT
+Text Label 5900 1700 0    50   ~ 0
+VSTOR
+Text Label 5900 1800 0    50   ~ 0
+LBOOST
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5DFA9542
+P 2800 3150
+F 0 "L?" V 3025 3150 50  0000 C CNN
+F 1 "22μH" V 2934 3150 50  0000 C CNN
+F 2 "" H 2800 3150 50  0001 C CNN
+F 3 "~" H 2800 3150 50  0001 C CNN
+	1    2800 3150
+	0    -1   -1   0   
+$EndComp
+Text Label 2950 3150 0    50   ~ 0
+LBOOST
+$Comp
+L Device:C C?
+U 1 1 5DFAA3C3
+P 2600 3350
+F 0 "C?" H 2715 3396 50  0000 L CNN
+F 1 "4.7μF" H 2715 3305 50  0000 L CNN
+F 2 "" H 2638 3200 50  0001 C CNN
+F 3 "~" H 2600 3350 50  0001 C CNN
+	1    2600 3350
+	1    0    0    -1  
+$EndComp
+Text Label 2600 3150 2    50   ~ 0
+VIN_DC
+Wire Wire Line
+	2600 3200 2600 3150
+Wire Wire Line
+	2650 3150 2600 3150
+Text Label 2600 3500 0    50   ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 5DFABDAD
+P 3600 3350
+F 0 "C?" H 3715 3396 50  0000 L CNN
+F 1 "10nF" H 3715 3305 50  0000 L CNN
+F 2 "" H 3638 3200 50  0001 C CNN
+F 3 "~" H 3600 3350 50  0001 C CNN
+	1    3600 3350
+	1    0    0    -1  
+$EndComp
+Text Label 3600 3500 0    50   ~ 0
+GND
+Text Label 3600 3200 0    50   ~ 0
+VREF_SAMP
+$Comp
+L Device:C C?
+U 1 1 5DFAE26B
+P 4350 3350
+F 0 "C?" H 4465 3396 50  0000 L CNN
+F 1 "4.7μF" H 4465 3305 50  0000 L CNN
+F 2 "" H 4388 3200 50  0001 C CNN
+F 3 "~" H 4350 3350 50  0001 C CNN
+	1    4350 3350
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3200 0    50   ~ 0
+VSTOR
+Wire Wire Line
+	4350 3200 4800 3200
+$Comp
+L Device:C C?
+U 1 1 5DFAE4FC
+P 4800 3350
+F 0 "C?" H 4915 3396 50  0000 L CNN
+F 1 "0.01μF" H 4915 3305 50  0000 L CNN
+F 2 "" H 4838 3200 50  0001 C CNN
+F 3 "~" H 4800 3350 50  0001 C CNN
+	1    4800 3350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 5450 5750 5450
-Wire Wire Line
-	5750 4850 5750 5450
-Text Label 5900 5450 0    50   ~ 0
+	4350 3500 4800 3500
+Text Label 4450 3500 0    50   ~ 0
 GND
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5DFB03C5
+P 5550 3400
+F 0 "BT?" H 5668 3496 50  0000 L CNN
+F 1 "5F" H 5668 3405 50  0000 L CNN
+F 2 "" V 5550 3460 50  0001 C CNN
+F 3 "~" V 5550 3460 50  0001 C CNN
+	1    5550 3400
+	1    0    0    -1  
+$EndComp
+Text Label 5550 3500 0    50   ~ 0
+GND
+Text Label 5550 3200 0    50   ~ 0
+VBAT
+$Comp
+L Device:C C?
+U 1 1 5DFB137F
+P 6650 3350
+F 0 "C?" H 6765 3396 50  0000 L CNN
+F 1 "22μF" H 6765 3305 50  0000 L CNN
+F 2 "" H 6688 3200 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5DFB164E
+P 6450 3150
+F 0 "L?" V 6675 3150 50  0000 C CNN
+F 1 "10μH" V 6584 3150 50  0000 C CNN
+F 2 "" H 6450 3150 50  0001 C CNN
+F 3 "~" H 6450 3150 50  0001 C CNN
+	1    6450 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 3200 6650 3150
+Wire Wire Line
+	6650 3150 6600 3150
+Text Label 6650 3150 0    50   ~ 0
+VOUT
+Text Label 6650 3500 0    50   ~ 0
+GND
+Text Label 6300 3150 2    50   ~ 0
+LBUCK
+Wire Wire Line
+	3500 4250 3950 4250
+$Comp
+L Device:R R?
+U 1 1 5DFBA24A
+P 3500 4400
+F 0 "R?" H 3570 4446 50  0000 L CNN
+F 1 "R" H 3570 4355 50  0000 L CNN
+F 2 "" V 3430 4400 50  0001 C CNN
+F 3 "~" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4550 3500 4650
+Text Label 3500 4600 0    50   ~ 0
+VBAT_OV
+$Comp
+L Device:R R?
+U 1 1 5DFBB38A
+P 3500 4800
+F 0 "R?" H 3570 4846 50  0000 L CNN
+F 1 "R" H 3570 4755 50  0000 L CNN
+F 2 "" V 3430 4800 50  0001 C CNN
+F 3 "~" H 3500 4800 50  0001 C CNN
+	1    3500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DFBB939
+P 3950 4400
+F 0 "R?" H 4020 4446 50  0000 L CNN
+F 1 "R" H 4020 4355 50  0000 L CNN
+F 2 "" V 3880 4400 50  0001 C CNN
+F 3 "~" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 4250
+Wire Wire Line
+	3950 4250 4400 4250
+$Comp
+L Device:R R?
+U 1 1 5DFBC00B
+P 3950 4800
+F 0 "R?" H 4020 4846 50  0000 L CNN
+F 1 "R" H 4020 4755 50  0000 L CNN
+F 2 "" V 3880 4800 50  0001 C CNN
+F 3 "~" H 3950 4800 50  0001 C CNN
+	1    3950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DFBC652
+P 3950 5200
+F 0 "R?" H 4020 5246 50  0000 L CNN
+F 1 "R" H 4020 5155 50  0000 L CNN
+F 2 "" V 3880 5200 50  0001 C CNN
+F 3 "~" H 3950 5200 50  0001 C CNN
+	1    3950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DFBCB9F
+P 4400 4400
+F 0 "R?" H 4470 4446 50  0000 L CNN
+F 1 "R" H 4470 4355 50  0000 L CNN
+F 2 "" V 4330 4400 50  0001 C CNN
+F 3 "~" H 4400 4400 50  0001 C CNN
+	1    4400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DFBF432
+P 4400 4800
+F 0 "R?" H 4470 4846 50  0000 L CNN
+F 1 "R" H 4470 4755 50  0000 L CNN
+F 2 "" V 4330 4800 50  0001 C CNN
+F 3 "~" H 4400 4800 50  0001 C CNN
+	1    4400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4650 4400 4550
+Text Label 4400 4600 0    50   ~ 0
+VOUT_SET
+Wire Wire Line
+	3950 4650 3950 4550
+Text Label 3950 4600 0    50   ~ 0
+OK_HYST
+Wire Wire Line
+	3950 5050 3950 4950
+Text Label 3950 5000 0    50   ~ 0
+OK_PROG
+Wire Wire Line
+	4400 4950 4400 5350
+Wire Wire Line
+	4400 5350 3950 5350
+Wire Wire Line
+	3500 4950 3500 5350
+Wire Wire Line
+	3500 5350 3950 5350
+Connection ~ 3950 5350
+Text Label 3800 5350 2    50   ~ 0
+GND
+Text Label 3850 4250 2    50   ~ 0
+VRDIV
 $EndSCHEMATC
