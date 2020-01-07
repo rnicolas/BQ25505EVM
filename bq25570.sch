@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:bq25570-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -213,7 +212,6 @@ F 3 "https://www.ti.com/lit/ds/symlink/bq25570.pdf" H 5100 2250 50  0001 C CNN
 	1    5300 1950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4700 2300
 Text Notes 850  650  0    50   ~ 0
 RAW INPUT
 Text Notes 650  1350 0    50   ~ 0
@@ -569,4 +567,6 @@ Wire Notes Line
 	1550 3500 500  3500
 Wire Notes Line
 	1550 500  1550 3500
+Text Label 4700 2300 2    50   ~ 0
+GND
 $EndSCHEMATC
