@@ -352,7 +352,7 @@ U 1 1 5DFB03C5
 P 5500 4000
 F 0 "BT1" H 5618 4096 50  0000 L CNN
 F 1 "5F" H 5618 4005 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" V 5500 4060 50  0001 C CNN
+F 2 "Components:PinHeader_1x02_P5.50mm_Vertical" V 5500 4060 50  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/2579997.pdf" V 5500 4060 50  0001 C CNN
 	1    5500 4000
 	1    0    0    -1  
