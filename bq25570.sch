@@ -202,7 +202,7 @@ $EndComp
 Text Label 10650 2500 0    50   ~ 0
 VRDIV
 $Comp
-L BatteryManagement:BQ25570 U1
+L bq25570-rescue:BQ25570-BatteryManagement U1
 U 1 1 5DF8A8E4
 P 5300 1950
 F 0 "U1" H 5275 2625 50  0000 C CNN
