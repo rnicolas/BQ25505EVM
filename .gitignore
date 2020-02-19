@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/kicad,linux,macos,windows
+# Created by Roger N. Alegret using https://www.gitignore.io/api/kicad,linux,macos,windows
 # Edit at https://www.gitignore.io/?templates=kicad,linux,macos,windows
 
 ### KiCad ###
@@ -17,7 +16,8 @@ _autosave-*
 *.tmp
 *-save.pro
 *-save.kicad_pcb
-*-cache
+*-cache.*
+*-rescue.*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -37,7 +37,7 @@ escue-backup/
 bom/
 
 # Gerber export output
-out/
+output/
 
 ### Linux ###
 
